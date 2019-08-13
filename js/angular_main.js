@@ -513,7 +513,7 @@ var header = function () {
     scope: true
   };
 }
-var footer = function () {
+var parallax = function () {
   return {
     restrict: "C",
     templateUrl: "footer.html",
@@ -523,3 +523,4 @@ var footer = function () {
 app.controller("menuControl", menuControl);
 app.directive("headerMenuCommon", header);
 app.directive("footerMenuCommon", footer);
+app.directive("parallaxCommon", parallax);
