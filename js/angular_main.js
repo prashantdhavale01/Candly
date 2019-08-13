@@ -48,6 +48,15 @@ var Menu = [{
     "href": "#",
     "liClass": "has-submenu"
   }, {
+    "id": 100,
+    "name": "Contact",
+    "level": 0,
+    "parentID": 0,
+    "hasChild": 0,
+    "href": "contact.html",
+    "liClass": "has-submenu"
+  },
+   {
     "id": 7,
     "name": "Home Classic",
     "level": 1,
@@ -493,7 +502,7 @@ var Menu = [{
   },
 ];
 
-var app = angular.module("homePage", []);
+var app = angular.module("candllyApp", []);
 var menuControl = function ($scope) {
   $scope.menu = Menu;
 }
