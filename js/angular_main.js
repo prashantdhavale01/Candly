@@ -1046,7 +1046,7 @@ var parallax = function () {
   };
 }
 
-var signUpControl = function ($scope) {
+var signInControl = function ($scope) {
   $scope.email = "";
   $scope.password = "";
 
@@ -1058,7 +1058,18 @@ var signUpControl = function ($scope) {
   }
 }
 
+var signUpControl = function ($scope) {
+  $scope.email = "";
+  $scope.password = "";
+  $scope.rePassword = "";
+
+  $scope.submit = function () {
+   
+  }
+}
+
 app.controller("menuControl", menuControl);
+app.controller("signInControl", signInControl);
 app.controller("signUpControl", signUpControl);
 app.directive("headerMenuCommon", header);
 app.directive("footerMenuCommon", footer);
