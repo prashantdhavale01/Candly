@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="homePage">
+<html lang="en" ng-app="candllyApp">
 
 <head>
   <meta charset="utf-8" />
@@ -29,29 +29,10 @@
 </head>
 
 <body>
-  <div ng-include="'header.html'"></div>
-
-  <section class="height-100 section bg-img-1 parallax" data-stellar-background-ratio="0.5">
-    <div class="bg-overlay"></div>
-    <div class="container pos-vertical-center">
-      <div class="row">
-        <div class="col-sm-12 text-center">
-          <div class="home-one-content">
-            <h3 class="text-white m-0 m-t-5">{{4+4}} Explore The New World of Creativity</h3>
-            <p class="text-light font-bold text-uppercase">Contrary to popular belief, Lorem Ipsum is not simply
-              random text.</p>
-          </div>
-        </div>
-      </div> <!-- end row -->
-    </div>
-    <!-- end container-->
-    <!-- Animated Mouse -->
-    <div class="mouse-wrapper">
-      <div class="mouse">
-        <div class="mouse-scroll"></div>
-      </div>
-    </div>
-  </section>
+  <div class="headerMenuCommon"></div>
+  <!-- <div ng-include="'header.html'"></div> -->
+  <div class="parallaxCommon"></div>
+  
 
   <section class="section">
     <div class="container">
@@ -375,7 +356,8 @@
     </div> <!-- end container -->
   </section>
   <!-- End Subscribe -->
-  <div ng-include="'footer.html'"></div>
+  <div class="footerMenuCommon"></div>
+  <!-- <div ng-include="'footer.html'"></div> -->
   <!-- js placed at the end of the document so the pages load faster -->
 
   <!-- Animated js -->

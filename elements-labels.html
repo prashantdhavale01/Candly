@@ -1,280 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
-    
-<!-- Mirrored from coderthemes.com/candlly/elements-labels.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 10 May 2019 14:14:28 GMT -->
+<html lang="en" ng-app="candllyApp">
+
 <head>
-        <meta charset="utf-8" />
-        <title>Candlly - Responsive Multipurpose Template</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
-        <meta content="Coderthemes" name="author" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="utf-8" />
+  <title>Candlly - Responsive Multipurpose Template</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+  <meta content="Coderthemes" name="author" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-        <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Animate core CSS -->
+  <link href="css/animate.min.css" rel="stylesheet">
+  <!-- Et line icons CSS -->
+  <link href="css/et-line-icons.css" rel="stylesheet">
+  <!-- Material design icons CSS -->
+  <link href="css/materialdesignicons.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet">
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <!-- Angular Js -->
+  <script src="js/angular.min.js"></script>
+  <script src="js/angular_main.js"></script>
+  <!-- Main Js -->
+</head>
 
-        <!-- Bootstrap core CSS -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <!-- Animate core CSS -->
-        <link href="css/animate.min.css" rel="stylesheet">
-        <!-- Et line icons CSS -->
-        <link href="css/et-line-icons.css" rel="stylesheet">
-        <!-- Material design icons CSS -->
-        <link href="css/materialdesignicons.min.css" rel="stylesheet">
-        <!-- Custom styles for this template -->
-        <link href="css/style.css" rel="stylesheet">
-
-    </head>
-
-
-    <body>
-
-        <!-- Pre-loader -->
-        <div id="preloader">
-            <div id="status">
-                <div class="spinner">Loading...</div>
-            </div>
-        </div>
-        <!-- End Preloader-->
-
-
-        <!-- Navigation Bar-->
-        <header id="topnav" class="defaultscroll">
-
-            <div class="container">
-                <!-- Logo container-->
-                <div>
-                    <a href="index.html" class="logo">
-                        <img src="images/logo_light.png" alt="" class="logo-light" height="26">
-                        <img src="images/logo_dark.png" alt="" class="logo-dark" height="24">
-                    </a>
-                </div>
-                <!-- End Logo container-->
-                <div class="menu-extras">
-
-                    <div class="menu-item">
-                        <!-- Mobile menu toggle-->
-                        <a class="navbar-toggle">
-                            <div class="lines">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                        </a>
-                        <!-- End mobile menu toggle-->
-                    </div>
-                </div>
-
-                <div id="navigation">
-
-                    <!-- Navigation Menu-->
-                    <ul class="navigation-menu">
-
-                        <li class="has-submenu">
-                            <a href="#">Home</a>
-                            <ul class="submenu">
-                                <li>
-                                    <a href="index.html">Home Classic</a>
-                                </li>
-                                <li>
-                                    <a href="index-corporate.html">Home Corporate</a>
-                                </li>
-                                <li>
-                                    <a href="index-agency.html">Home Agency</a>
-                                </li>
-                                <li>
-                                    <a href="index-portfolio.html">Home Portfolio</a>
-                                </li>
-                                <li>
-                                    <a href="index-landing.html">Home Landing</a>
-                                </li>
-                                <li>
-                                    <a href="index-countdown.html">Home Countdown</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="has-submenu">
-                            <a href="#">Pages</a>
-                            <ul class="submenu megamenu">
-                                <li>
-                                    <ul>
-                                        <li>
-                                            <a href="page-about.html">About Us</a>
-                                        </li>
-                                        <li>
-                                            <a href="page-services.html">Services</a>
-                                        </li>
-                                        <li>
-                                            <a href="page-faq.html">FAQ</a>
-                                        </li>
-                                        <li>
-                                            <a href="page-pricing.html">Pricing</a>
-                                        </li>
-                                        <li>
-                                            <a href="page-error.html">Error Page</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <ul>
-                                        <li>
-                                            <a href="page-team.html">Team</a>
-                                        </li>
-                                        <li>
-                                            <a href="page-careers.html">Careers</a>
-                                        </li>
-                                        <li>
-                                            <a href="page-clients.html">Clients</a>
-                                        </li>
-                                        <li>
-                                            <a href="page-blank.html">Blank Page</a>
-                                        </li>
-                                    </ul>
-                                </li>
-
-                            </ul>
-                        </li>
-                        <li class="has-submenu">
-                            <a href="#">Elements</a>
-                            <ul class="submenu megamenu">
-                                <li>
-                                    <ul>
-                                        <li>
-                                            <a href="elements-animation.html"><i class="mdi mdi-auto-fix"></i>Animation</a>
-                                        </li>
-                                        <li>
-                                            <a href="elements-accordions.html"><i class="mdi mdi-checkbox-multiple-blank-outline"></i>Accordions</a>
-                                        </li>
-                                        <li>
-                                            <a href="elements-alerts.html"><i class="mdi mdi-alert"></i>Alerts</a>
-                                        </li>
-                                        <li>
-                                            <a href="elements-buttons.html"><i class="mdi mdi-album"></i>Buttons</a>
-                                        </li>
-                                        <li>
-                                            <a href="elements-countnumbers.html"><i class="mdi mdi-timer"></i>Counter Numbers </a>
-                                        </li>
-                                        <li>
-                                            <a href="elements-grid.html"><i class="mdi mdi-grid"></i>Grid</a>
-                                        </li>
-                                        <li>
-                                            <a href="elements-material-icons.html"><i class="mdi mdi-material-ui"></i>Material Icons</a>
-                                        </li>
-                                        <li>
-                                            <a href="elements-etline-icon.html"><i class="mdi mdi-emoticon"></i>Etline Icons</a>
-                                        </li>
-                                        <li>
-                                            <a href="elements-colored-icons.html"><i class="mdi mdi-layers"></i>Colored Icons</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <ul>
-                                        <li>
-                                            <a href="elements-images.html"><i class="mdi mdi-image"></i>Images </a>
-                                        </li>
-                                        <li>
-                                            <a href="elements-labels.html"><i class="mdi mdi-label"></i>Labels</a>
-                                        </li>
-                                        <li>
-                                            <a href="elements-typography.html"><i
-                                                    class="mdi mdi-format-float-left"></i>Typography</a>
-                                        </li>
-                                        <li>
-                                            <a href="elements-maps.html"><i class="mdi mdi-google-maps"></i>Google Maps</a>
-                                        </li>
-                                        <li>
-                                            <a href="elements-modals.html"><i class="mdi mdi-magnify-plus"></i>Modals</a>
-                                        </li>
-                                        <li>
-                                            <a href="elements-panels.html"><i class="mdi mdi-application"></i>Panels</a>
-                                        </li>
-                                        <li>
-                                            <a href="elements-progressbars.html"><i class="mdi mdi-playlist-check"></i>Progressbars</a>
-                                        </li>
-                                        <li>
-                                            <a href="elements-tables.html"><i class="mdi mdi-table"></i>Tables</a>
-                                        </li>
-                                        <li>
-                                            <a href="elements-video.html"><i class="mdi mdi-video"></i>Responsive Video</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="has-submenu">
-                            <a href="#">Work</a>
-                            <ul class="submenu">
-                                <li>
-                                    <a href="portfolio-boxed.html">Boxed</a>
-                                </li>
-                                <li>
-                                    <a href="portfolio-wide.html">Wide</a>
-                                </li>
-                                <li>
-                                    <a href="portfolio-masonry.html">Masonry</a>
-                                </li>
-                                <li>
-                                    <a href="portfolio-masonry-wide.html">Masonry Wide</a>
-                                </li>
-                                <li>
-                                    <a href="portfolio-single.html">Single Work</a>
-                                </li>
-                                <li>
-                                    <a href="portfolio-promo.html">Promo Page</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="has-submenu">
-                            <a href="#">Blog</a>
-                            <ul class="submenu">
-                                <li>
-                                    <a href="blog-classic.html">Classic</a>
-                                </li>
-                                <li>
-                                    <a href="blog-masonry.html">Masonry</a>
-                                </li>
-                                <li>
-                                    <a href="blog-columns.html">Columns</a>
-                                </li>
-                                <li>
-                                    <a href="blog-single.html">Single Post</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="has-submenu">
-                            <a href="#">Shop</a>
-                            <ul class="submenu">
-                                <li>
-                                    <a href="shop-products.html">Products</a>
-                                </li>
-                                <li>
-                                    <a href="shop-single-product.html">Single Product</a>
-                                </li>
-                                <li>
-                                    <a href="shop-shopping-cart.html">Shopping Cart</a>
-                                </li>
-                                <li>
-                                    <a href="shop-checkout.html">Checkout</a>
-                                </li>
-                                <li>
-                                    <a href="shop-wishlist.html">Wishlist</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <a href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-                    <!-- End navigation menu        -->
-                </div>
-            </div>
-        </header>
-        <!-- End Navigation Bar-->
-
+<body>
+  <div class="headerMenuCommon"></div>
+  <!-- <div ng-include="'header.html'"></div> -->
 
 
         <section class="page-header-box section bg-img-2 parallax"  data-stellar-background-ratio="0.5">

@@ -5,7 +5,6 @@
   </div>
 </div>
 <!-- End Preloader-->
-
 <!-- Navigation Bar-->
 <header id="topnav" class="defaultscroll" ng-controller="menuControl">
   <div class="container">
@@ -35,183 +34,27 @@
       <ul class="navigation-menu">
         <li class="has-submenu" ng-repeat="m in menu | filter:{level: 0}">
           <a href="{{m.href}}">{{m.name}}</a>
-          <ul class="submenu" ng-class="m.hasChildLongMenu == 1 ? 'megamenu' : ''" ng-if="m.hasChild == 1">
-            <li class="has-submenu" ng-repeat="mc in menu | filter:{level: 1}" ng-if="m.id == mc.parentID">
+          <ul class="submenu" ng-if="m.hasChild == 1">
+            <li class="has-submenu" ng-repeat="mc in menu | filter:{level:1}" ng-if="m.id == mc.parentID">
               <a href="{{mc.href}}">{{mc.name}}</a>
             </li>
-          </ul> 
-        </li>
- 
-        <li class="has-submenu">
-          <a href="#">Pages</a>
-          <ul class="submenu megamenu">
-            <li>
-              <ul>
-                <li>
-                  <a href="page-about.html">About Us</a>
-                </li>
-                <li>
-                  <a href="page-services.html">Services</a>
-                </li>
-                <li>
-                  <a href="page-faq.html">FAQ</a>
-                </li>
-                <li>
-                  <a href="page-pricing.html">Pricing</a>
-                </li>
-                <li>
-                  <a href="page-error.html">Error Page</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <ul>
-                <li>
-                  <a href="page-team.html">Team</a>
-                </li>
-                <li>
-                  <a href="page-careers.html">Careers</a>
-                </li>
-                <li>
-                  <a href="page-clients.html">Clients</a>
-                </li>
-                <li>
-                  <a href="page-blank.html">Blank Page</a>
-                </li>
-              </ul>
-            </li>
           </ul>
         </li>
-        <li class="has-submenu">
-          <a href="#">Elements</a>
-          <ul class="submenu megamenu">
-            <li>
-              <ul>
-                <li>
-                  <a href="elements-animation.html"><i class="mdi mdi-auto-fix"></i>Animation</a>
-                </li>
-                <li>
-                  <a href="elements-accordions.html"><i
-                      class="mdi mdi-checkbox-multiple-blank-outline"></i>Accordions</a>
-                </li>
-                <li>
-                  <a href="elements-alerts.html"><i class="mdi mdi-alert"></i>Alerts</a>
-                </li>
-                <li>
-                  <a href="elements-buttons.html"><i class="mdi mdi-album"></i>Buttons</a>
-                </li>
-                <li>
-                  <a href="elements-countnumbers.html"><i class="mdi mdi-timer"></i>Counter Numbers </a>
-                </li>
-                <li>
-                  <a href="elements-grid.html"><i class="mdi mdi-grid"></i>Grid</a>
-                </li>
-                <li>
-                  <a href="elements-material-icons.html"><i class="mdi mdi-material-ui"></i>Material Icons</a>
-                </li>
-                <li>
-                  <a href="elements-etline-icon.html"><i class="mdi mdi-emoticon"></i>Etline Icons</a>
-                </li>
-                <li>
-                  <a href="elements-colored-icons.html"><i class="mdi mdi-layers"></i>Colored Icons</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <ul>
-                <li>
-                  <a href="elements-images.html"><i class="mdi mdi-image"></i>Images </a>
-                </li>
-                <li>
-                  <a href="elements-labels.html"><i class="mdi mdi-label"></i>Labels</a>
-                </li>
-                <li>
-                  <a href="elements-typography.html"><i class="mdi mdi-format-float-left"></i>Typography</a>
-                </li>
-                <li>
-                  <a href="elements-maps.html"><i class="mdi mdi-google-maps"></i>Google Maps</a>
-                </li>
-                <li>
-                  <a href="elements-modals.html"><i class="mdi mdi-magnify-plus"></i>Modals</a>
-                </li>
-                <li>
-                  <a href="elements-panels.html"><i class="mdi mdi-application"></i>Panels</a>
-                </li>
-                <li>
-                  <a href="elements-progressbars.html"><i class="mdi mdi-playlist-check"></i>Progressbars</a>
-                </li>
-                <li>
-                  <a href="elements-tables.html"><i class="mdi mdi-table"></i>Tables</a>
-                </li>
-                <li>
-                  <a href="elements-video.html"><i class="mdi mdi-video"></i>Responsive Video</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
+        <li class="last-elements">
+          <a class="signup-link" data-turbolinks="false" data-toggle="modal" data-target="#signInUpModal"
+            href="javascript:;">
+            <button name="button" type="button" class="btn btn-custom btn-sm">
+              SIGN IN
+            </button>
+          </a>
         </li>
-        <li class="has-submenu">
-          <a href="#">Work</a>
-          <ul class="submenu">
-            <li>
-              <a href="portfolio-boxed.html">Boxed</a>
-            </li>
-            <li>
-              <a href="portfolio-wide.html">Wide</a>
-            </li>
-            <li>
-              <a href="portfolio-masonry.html">Masonry</a>
-            </li>
-            <li>
-              <a href="portfolio-masonry-wide.html">Masonry Wide</a>
-            </li>
-            <li>
-              <a href="portfolio-single.html">Single Work</a>
-            </li>
-            <li>
-              <a href="portfolio-promo.html">Promo Page</a>
-            </li>
-          </ul>
-        </li>
-        <li class="has-submenu">
-          <a href="#">Blog</a>
-          <ul class="submenu">
-            <li>
-              <a href="blog-classic.html">Classic</a>
-            </li>
-            <li>
-              <a href="blog-masonry.html">Masonry</a>
-            </li>
-            <li>
-              <a href="blog-columns.html">Columns</a>
-            </li>
-            <li>
-              <a href="blog-single.html">Single Post</a>
-            </li>
-          </ul>
-        </li>
-        <li class="has-submenu">
-          <a href="#">Shop</a>
-          <ul class="submenu">
-            <li>
-              <a href="shop-products.html">Products</a>
-            </li>
-            <li>
-              <a href="shop-single-product.html">Single Product</a>
-            </li>
-            <li>
-              <a href="shop-shopping-cart.html">Shopping Cart</a>
-            </li>
-            <li>
-              <a href="shop-checkout.html">Checkout</a>
-            </li>
-            <li>
-              <a href="shop-wishlist.html">Wishlist</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="contact.html">Contact</a>
+        <li class="last-elements">
+          <a class="signup-link" data-turbolinks="false" data-toggle="modal" data-target="#signInUpModal"
+            href="javascript:;">
+            <button name="button" type="button" class="btn btn-primary btn-sm" ng-click="languageChange()">
+              Change
+            </button>
+          </a>
         </li>
       </ul>
       <!-- End navigation menu        -->
