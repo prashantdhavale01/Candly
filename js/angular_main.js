@@ -3,6 +3,8 @@ var Menu = [{
     "name": "Home",
     "level": 0,
     "parentID": 0,
+    "hasChild":1,
+    "hasChildLongMenu":0,
     "href": "#",
     "liClass": "has-submenu"
   },
@@ -11,6 +13,8 @@ var Menu = [{
     "name": "Pages",
     "level": 0,
     "parentID": 0,
+    "hasChild": 1,
+    "hasChildLongMenu":1,
     "href": "#",
     "liClass": "has-submenu"
   }, {
@@ -18,6 +22,8 @@ var Menu = [{
     "name": "Elements",
     "level": 0,
     "parentID": 0,
+    "hasChild": 1,
+    "hasChildLongMenu":1,
     "href": "#",
     "liClass": "has-submenu"
   }, {
@@ -25,6 +31,8 @@ var Menu = [{
     "name": "Work",
     "level": 0,
     "parentID": 0,
+    "hasChild": 1,
+    "hasChildLongMenu":0,
     "href": "#",
     "liClass": "has-submenu"
   }, {
@@ -32,6 +40,8 @@ var Menu = [{
     "name": "Blog",
     "level": 0,
     "parentID": 0,
+    "hasChild": 1,
+    "hasChildLongMenu":0,
     "href": "#",
     "liClass": "has-submenu"
   }, {
@@ -39,6 +49,8 @@ var Menu = [{
     "name": "Shop",
     "level": 0,
     "parentID": 0,
+    "hasChild": 1,
+    "hasChildLongMenu":0,
     "href": "#",
     "liClass": "has-submenu"
   },
@@ -47,6 +59,7 @@ var Menu = [{
     "name": "Home Classic",
     "level": 1,
     "parentID": 1,
+    "hasChild": 0,
     "href": "#",
     "liClass": ""
   },
@@ -55,6 +68,7 @@ var Menu = [{
     "name": "Home Corporate",
     "level": 1,
     "parentID": 1,
+    "hasChild": 0,
     "href": "index-corporate.html",
     "liClass": ""
   },
@@ -63,6 +77,7 @@ var Menu = [{
     "name": "Home Agency",
     "level": 1,
     "parentID": 1,
+    "hasChild": 0,
     "href": "index-agency.html",
     "liClass": ""
   },
@@ -71,6 +86,7 @@ var Menu = [{
     "name": "Home Portfolio",
     "level": 1,
     "parentID": 1,
+    "hasChild": 0,
     "href": "index-portfolio.html",
     "liClass": ""
   },
@@ -79,6 +95,7 @@ var Menu = [{
     "name": "Home Landing",
     "level": 1,
     "parentID": 1,
+    "hasChild": 0,
     "href": "index-landing.html",
     "liClass": ""
   },
@@ -87,17 +104,10 @@ var Menu = [{
     "name": "Home Countdown",
     "level": 1,
     "parentID": 1,
+    "hasChild": 0,
     "href": "index-countdown.html",
     "liClass": ""
-  },
-  {
-    "id": 13,
-    "name": "Home Countdown",
-    "level": 1,
-    "parentID": 1,
-    "href": "index-countdown.html",
-    "liClass": ""
-  }
+  }, 
 ];
 
 var app = angular.module("homePage", []);

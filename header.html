@@ -35,17 +35,11 @@
       <ul class="navigation-menu">
         <li class="has-submenu" ng-repeat="m in menu | filter:{level: 0}">
           <a href="{{m.href}}">{{m.name}}</a>
-          <ul class="submenu" ng-if="m.parentID = 1">
-              <li class="has-submenu" ng-repeat="mc in menu | filter:{level: 1}">
-                  <a href="{{m.href}}">{{mc.name}}</a>
+          <ul class="submenu" ng-class="m.hasChildLongMenu == 1 ? 'megamenu' : ''" ng-if="m.hasChild == 1">
+            <li class="has-submenu" ng-repeat="mc in menu | filter:{level: 1}" ng-if="m.id == mc.parentID">
+              <a href="{{mc.href}}">{{mc.name}}</a>
             </li>
-          </ul>
-
-          <ul class="submenu megamenu" ng-if="m.parentID = 2">
-              <li class="has-submenu" ng-repeat="mc in menu | filter:{level: 1}">
-                  <a href="{{m.href}}">{{mc.name}}</a>
-            </li>
-          </ul>
+          </ul> 
         </li>
  
         <li class="has-submenu">
