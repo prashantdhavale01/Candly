@@ -1009,7 +1009,7 @@ var MenuHn = [{
 
 
 var app = angular.module("candllyApp", []);
-var menuControl = function ($scope) {
+var menuControl = function($scope) {
   $scope.menu = Menu;
   $scope.ln = "En";
 
@@ -1046,7 +1046,20 @@ var parallax = function () {
   };
 }
 
+var signUpControl = function ($scope) {
+  $scope.email = "";
+  $scope.password = "";
+
+  $scope.submit = function () {
+    if ($scope.email == 'admin@gmail.com' && $scope.password == 'password') {
+      alert($scope.email + $scope.password);
+      window.location = 'page-about.html';
+    }
+  }
+}
+
 app.controller("menuControl", menuControl);
+app.controller("signUpControl", signUpControl);
 app.directive("headerMenuCommon", header);
 app.directive("footerMenuCommon", footer);
 app.directive("parallaxCommon", parallax);
